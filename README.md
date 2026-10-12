@@ -3,7 +3,7 @@
 Ma boîte à outils de scripts Linux : administration, sécurité, réseau, sauvegarde et supervision.
 Écrits et testés principalement sur **RHEL** et ses dérivés (Rocky, Alma), la plupart fonctionnent aussi sur Debian/Ubuntu.
 
-![ShellCheck](https://github.com/Kevin-EXE86/linux-scripts/actions/workflows/shellcheck.yml/badge.svg)
+![ShellCheck](https://github.com/KevinFIEFFE/linux-scripts/actions/workflows/shellcheck.yml/badge.svg)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![RHEL](https://img.shields.io/badge/RHEL-EE0000?style=flat-square&logo=redhat&logoColor=white)
@@ -33,7 +33,7 @@ Ma boîte à outils de scripts Linux : administration, sécurité, réseau, sauv
 ## 🚀 Utilisation
 
 ```bash
-git clone https://github.com/Kevin-EXE86/linux-scripts.git
+git clone https://github.com/KevinFIEFFE/linux-scripts.git
 cd linux-scripts
 chmod +x admin/mon-script.sh
 ./admin/mon-script.sh --help
