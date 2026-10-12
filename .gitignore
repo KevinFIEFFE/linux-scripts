@@ -1,0 +1,16 @@
+# Logs et fichiers temporaires
+*.log
+*.tmp
+*.swp
+*~
+
+# Secrets : ne jamais commiter
+.env
+*.pem
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.pyc
+.venv/

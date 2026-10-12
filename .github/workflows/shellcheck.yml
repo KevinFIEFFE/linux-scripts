@@ -1,0 +1,18 @@
+name: ShellCheck
+
+on:
+  push:
+    paths: ["**.sh", ".github/workflows/shellcheck.yml"]
+  pull_request:
+    paths: ["**.sh"]
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Vérifier les scripts shell
+        run: |
+          mapfile -t files < <(git ls-files '*.sh')
+          if [ ${#files[@]} -eq 0 ]; then echo "Aucun script à vérifier"; exit 0; fi
+          shellcheck --severity=warning "${files[@]}"
